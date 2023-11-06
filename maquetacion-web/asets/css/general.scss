@@ -1,0 +1,102 @@
+.layaout_section{
+  display: grid;
+  grid-template-columns:repeat(3,300px);
+  grid-template-rows: repeat(4,400px);
+  align-content: center;
+  justify-content: center;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 400px)); /* Crea columnas automáticamente con un ancho mínimo de 100px */
+  gap: 10px; /* Espacio entre elementos */
+  grid-auto-flow: row; /* Distribuye los elementos en filas */
+  max-width:1520px; /* Establece un ancho máximo para el contenedor */
+
+ 
+}
+.layaout_nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.layaout_nav_fondo{
+    background-image: url(hero.png);
+    width: 100%;
+    height: 72vh;
+    background-size: cover;
+    margin-bottom: 100px;
+    
+  }
+  .section-cards{
+    display: grid;
+    
+    
+    box-shadow: 0px 0px 30px 0px rgb(221, 209, 209);
+    .section_agregar{
+        display: flex;
+     
+        text-align: center;
+      
+    }
+    .agregar-carrito{
+       color: white;
+        background-color:  rgb(20, 132, 120) ;
+        border-radius: 5px;
+        width: 100%;
+        height: 50px;
+        margin: 15px;
+        padding: 10px;
+        &:hover{
+            background-color: rgb(9, 205, 245);
+            transition: 0.3s;
+        }
+       
+      
+       
+    }
+    .cards_info{
+        h4,p{
+            padding-left: 10px;
+            padding-top: 5px;
+            
+        }
+        .precio{
+            display: flex;
+            justify-content: space-between;
+           
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+    }
+    .cards_img{
+        width: 100%;
+        height: 100%;
+        
+       
+     }
+  }
+  .layaout_table{
+    display: flex;
+    height: 400px;
+    width:500px ;
+    background-color: red;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+    th, td{
+        padding: 10px;
+    }
+  }
+ .layaout_table_contains{
+    display: none;
+    justify-content:flex-end;
+    margin-right: 40px;
+   
+ }
+ 
+
